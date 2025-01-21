@@ -4,123 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài 16 - Định Dạng Khung</title>
+    <title>Tet Dishes Introduction</title>
     <style>
-        /* Bài 1: Ẩn phần tử HTML */
-        .hidden {
-            display: none;
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f4e8;
         }
-
-        /* Bài 2: Định dạng test.test_more */
-        .test.test_more {
-            background-color: red;
-        }
-
-        /* VẬN DỤNG Bài 1 */
-        .important {
+        .marquee {
+            background-color: #ffcc00;
+            color: #800000;
+            font-size: 1.5rem;
             font-weight: bold;
-            color: blue;
+            text-align: center;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            overflow: hidden;
+            white-space: nowrap;
         }
-        .normal {
-            font-style: italic;
-            color: green;
+        .content {
+            padding: 20px;
         }
-
-        /* VẬN DỤNG Bài 2 */
-        .custom-border {
-            border-top: 2px solid red;
-            border-bottom: 2px dashed blue;
-            border-left: 2px dotted green;
-            border-right: 2px double purple;
+        .dish {
+            margin-bottom: 30px;
         }
-
-        /* Bài 17: Mức độ ưu tiên của bộ chọn */
-        #p123 + p {
-            background-color: yellow;
+        h1 {
+            color: #d02a2a;
+            text-align: center;
         }
-        h2#p123 + p {
-            background-color: lightblue;
+        h2 {
+            color: #b5651d;
         }
-
-        /* VẬN DỤNG Bài 2: Định dạng tên riêng */
-        .name {
-            border: 1px solid black;
-            font-style: italic;
-            padding: 5px;
+        p {
+            margin: 10px 0;
         }
-
-        /* VẬN DỤNG Bài 1: Pseudo-class */
-        .hover-effect:hover {
-            color: red;
-        }
-        .active-effect:active {
-            background-color: yellow;
-        }
-        .focus-effect:focus {
-            outline: 2px solid blue;
-        }
-        .nth-child-effect:nth-child(odd) {
-            background-color: lightgrey;
-        }
-
-        /* VẬN DỤNG Bài 2: Pseudo-element */
-        .before-effect::before {
-            content: "\2605 ";
-            color: gold;
-        }
-        .after-effect::after {
-            content: " \2605";
-            color: gold;
-        }
-        .first-line-effect::first-line {
-            font-weight: bold;
+        .dish img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Bài 16: Định Dạng Khung</h1>
+    <div class="marquee">
+        <marquee behavior="scroll" direction="left">Chúc mừng năm mới 2025 - An khang thịnh vượng!</marquee>
+    </div>
 
-    <h2>LUYỆN TẬP</h2>
-    <h3>Bài 1</h3>
-    <p class="hidden">Phần tử này bị ẩn.</p>
+    <div class="content">
+        <h1>Discover Popular Tet Dishes</h1>
 
-    <h3>Bài 2</h3>
-    <div class="test test_more">Định dạng này sẽ có nền đỏ.</div>
+        <div class="dish">
+            <h2>1. Bánh chưng, bánh tét</h2>
+            <img src="https://example.com/banhchung_banhtet.jpg" alt="Bánh chưng và bánh tét">
+            <p><strong>Đặc trưng:</strong></p>
+            <ul>
+                <li>Bánh chưng (miền Bắc) và bánh tét (miền Nam) được làm từ gạo nếp, đậu xanh, thịt lợn, và được gói bằng lá dong hoặc lá chuối.</li>
+                <li>Bánh chưng: Hình vuông. Bánh tét: Hình trụ dài.</li>
+            </ul>
+            <p><strong>Ý nghĩa:</strong></p>
+            <ul>
+                <li>Biểu tượng của sự no đủ: Tượng trưng cho sự sung túc.</li>
+                <li>Tri ân tổ tiên: Thể hiện lòng biết ơn với cội nguồn.</li>
+                <li>Tôn vinh đất trời: Hình vuông của bánh chưng tượng trưng cho đất, còn hình trụ của bánh tét tượng trưng cho trời.</li>
+            </ul>
+        </div>
 
-    <h2>VẬN DỤNG</h2>
-    <h3>Bài 1</h3>
-    <p class="important">P1: Đây là đoạn P1 quan trọng nhất.</p>
-    <p class="normal">P2: Đây là đoạn P2.</p>
-    <p class="normal">P3: Đây là đoạn P3.</p>
+        <div class="dish">
+            <h2>2. Thịt kho hột vịt (Thịt kho tàu)</h2>
+            <img src="https://example.com/thitkho.jpg" alt="Thịt kho hột vịt">
+            <p><strong>Đặc trưng:</strong></p>
+            <ul>
+                <li>Món ăn gồm thịt heo (thường là thịt ba chỉ), trứng vịt, nước dừa, được kho đến khi mềm và thấm gia vị.</li>
+                <li>Phổ biến ở miền Nam.</li>
+            </ul>
+            <p><strong>Ý nghĩa:</strong></p>
+            <ul>
+                <li>Sự hòa thuận, đoàn viên: Tượng trưng cho sự viên mãn.</li>
+                <li>Bền chặt, gắn kết: Biểu thị tình cảm sâu sắc giữa các thành viên trong gia đình.</li>
+            </ul>
+        </div>
 
-    <h3>Bài 2</h3>
-    <div class="custom-border">Đây là khung có viền khác nhau cho từng cạnh.</div>
+        <div class="dish">
+            <h2>3. Dưa hành, củ kiệu</h2>
+            <img src="https://example.com/duahanh_cukieu.jpg" alt="Dưa hành và củ kiệu">
+            <p><strong>Đặc trưng:</strong></p>
+            <ul>
+                <li>Dưa hành phổ biến ở miền Bắc và Trung, còn củ kiệu được ưa chuộng ở miền Nam.</li>
+                <li>Món ăn thường là hành củ hoặc củ kiệu muối chua, ăn kèm với thịt hoặc bánh chưng/bánh tét.</li>
+            </ul>
+            <p><strong>Ý nghĩa:</strong></p>
+            <ul>
+                <li>Tạo sự cân bằng: Giảm độ ngấy của các món ăn dầu mỡ.</li>
+                <li>Tinh thần tiết kiệm: Thể hiện truyền thống tận dụng nguyên liệu.</li>
+            </ul>
+        </div>
 
-    <h1>Bài 17: CÁC MỪC ĐỘ ƯU TIÊN CỦA BỘ CHỈN</h1>
-    <h2>LUYỆN TẬP</h2>
-    <h3>Bài 1</h3>
-    <h2 id="p123">Heading 2</h2>
-    <p>Phần tử p này sẽ được định dạng khác biệt.</p>
-
-    <h3>Bài 2</h3>
-    <p class="name">Nguyễn Văn A</p>
-    <p class="name">Công ty XYZ</p>
-
-    <h2>VẬN DỤNG</h2>
-    <h3>Bài 1</h3>
-    <a href="#" class="hover-effect">Hover me!</a><br>
-    <button class="active-effect">Click me!</button><br>
-    <input type="text" class="focus-effect" placeholder="Focus me!"><br>
-    <ul>
-        <li class="nth-child-effect">Item 1</li>
-        <li class="nth-child-effect">Item 2</li>
-        <li class="nth-child-effect">Item 3</li>
-    </ul>
-
-    <h3>Bài 2</h3>
-    <p class="before-effect">Trước khi thêm pseudo-element.</p>
-    <p class="after-effect">Sau khi thêm pseudo-element.</p>
-    <p class="first-line-effect">Đây là một đoạn văn bản ví dụ. Dòng đầu tiên sẽ được bôi đậm.</p>
+        <div class="dish">
+            <h2>4. Mâm ngũ quả</h2>
+            <img src="https://example.com/mamnguqua.jpg" alt="Mâm ngũ quả">
+            <p><strong>Đặc trưng:</strong></p>
+            <ul>
+                <li>Mâm ngũ quả gồm 5 loại trái cây, thường chọn theo màu sắc và ý nghĩa.</li>
+                <li>Miền Bắc: Chuối, bưởi, cam/quýt, hồng, quất.</li>
+                <li>Miền Nam: Mãng cầu, dừa, đu đủ, xoài, sung ("Cầu vừa đủ xài sung").</li>
+            </ul>
+            <p><strong>Ý nghĩa:</strong></p>
+            <ul>
+                <li>Tượng trưng cho sự đủ đầy: "Ngũ" đại diện cho ngũ hành (Kim, Mộc, Thủy, Hỏa, Thổ).</li>
+                <li>Cầu may mắn: Thể hiện lời cầu mong tài lộc, sức khỏe, hạnh phúc.</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
-
